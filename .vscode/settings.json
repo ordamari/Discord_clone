@@ -3,5 +3,6 @@
         "activityBar.background": "#173415",
         "titleBar.activeBackground": "#20491E",
         "titleBar.activeForeground": "#F7FCF7"
-    }
+    },
+    "cSpell.words": ["lucide"]
 }
