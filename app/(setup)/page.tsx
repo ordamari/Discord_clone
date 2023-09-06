@@ -8,7 +8,7 @@ const Setup = async () => {
         where: {
             members: {
                 some: {
-                    id: profile.id,
+                    profileId: profile.id,
                 },
             },
         },
