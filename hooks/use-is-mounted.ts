@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import useToggle from './useToggle'
+import useToggle from './use-toggle'
 
 export function useIsMounted() {
     const [isMounted, toggleIsMounted] = useToggle(false)
