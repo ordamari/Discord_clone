@@ -3,12 +3,12 @@ import { db } from '@/lib/db'
 import { NextResponse } from 'next/server'
 
 export async function DELETE(
-    Req: Request,
+    req: Request,
     { params: { memberId } }: { params: { memberId: string } }
 ) {
     try {
         const profile = await currentProfile()
-        const { searchParams } = new URL(Req.url)
+        const { searchParams } = new URL(req.url)
         const serverId = searchParams.get('serverId')
         if (!profile) {
             return new NextResponse('Unauthorized', { status: 401 })
